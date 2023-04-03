@@ -1,5 +1,20 @@
 public class Hello {
+	private String message;
+
+	public Hello(String message) {
+		this.message = message;
+	}
+
+	public Hello() {
+		this("");
+	}
+
 	public static void main(String[] args) {
-		System.out.println("Hello, world!");
+		Hello hello = new Hello("Hello, world!");
+		System.out.println(hello);
+	}
+
+	public String toString() {
+		return message;
 	}
 }
